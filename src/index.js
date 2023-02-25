@@ -305,6 +305,7 @@ function startGame(){
   setDuration(10);
   showUp();
   startTimer();
+  document.getElementById("timer").style.color= "red";
   return "game started";
   
 }
