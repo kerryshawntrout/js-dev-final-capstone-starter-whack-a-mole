@@ -8,7 +8,7 @@ const hardButton = document.querySelector('#hard');
 const score = document.querySelector('#score'); // Use querySelector() to get the score element
 const timerDisplay = document.querySelector('#timer'); // use querySelector() to get the timer element.
 const music = document.querySelector("#myAudio") //added to play the mole song once you click the start button
-const smack = document.querySeledctor("#smack")
+const smack = document.querySelector("#smack")
 let time = 0;
 let timer;
 let lastHole = 0;
