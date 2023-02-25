@@ -7,7 +7,8 @@ const normalButton = document.querySelector('#normal');
 const hardButton = document.querySelector('#hard');
 const score = document.querySelector('#score'); // Use querySelector() to get the score element
 const timerDisplay = document.querySelector('#timer'); // use querySelector() to get the timer element.
-let music = new Audio("../assets/molesong.mp3") //added to play the mole song once you click the start button
+const music = document.querySelector("#myAudio") //added to play the mole song once you click the start button
+const smack = document.querySeledctor("#smack")
 let time = 0;
 let timer;
 let lastHole = 0;
@@ -244,8 +245,8 @@ function startTimer() {
 */
 function whack(event) {
   // TODO: Write your code here.
-  let sound = new Audio("../assets/hit.mp3")
-  sound.play(); //added to play the whack sound
+  //let sound = new Audio("../assets/hit.mp3")
+  smack.play(); //added to play the whack sound
   updateScore(); //updates the score
   setEventListeners(); //implements event listeners
   chooseHole(holes); //selects the next hole
